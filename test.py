@@ -13,7 +13,7 @@ def tokenize (input: str):
     tokens.append(input[len(input) - 1])
     return tokens
 
-
+#Words categorised by attitude/simple mood (happy, sad, love, hate, etc)
 bad = ["black", "old", "stop", "cold", "cut", "fall", "far", "hot", "hurt", "never",
         "bear", "fire", "night", "rain", "snow", "wind", "hate", "bad", "die", "death"]
 
