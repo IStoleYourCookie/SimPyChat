@@ -84,7 +84,8 @@ input = "I like white men in the sun."
 input = tokenize(input)
 show(input)
 
-verbs = []
+#TODO: create these word categories
+""" verbs = []
 
 nouns = []
 
@@ -98,4 +99,4 @@ pronouns = []
 
 interjections = []
 
-prepostions = []
+prepostions = [] """
