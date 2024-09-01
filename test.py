@@ -131,7 +131,5 @@ pronouns_posessive = ["his", "her", "my", "its", "thier", "our", "your"]
 pronouns_reflexive = ["myself", "himself", "herself", "itself", 
                       "themselves", "ourselves", "yourself", "yourselves"]
 
-interjections = []
-
 prepostions = ["about", "after", "at", "by", "down", "for", "from", "on", "into", "of", "on",
                "over", "to", "under", "upon", "with"]
