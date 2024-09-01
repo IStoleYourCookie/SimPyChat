@@ -20,7 +20,7 @@ bad = ["black", "old", "stop", "cold", "cut", "fall", "far", "hot", "hurt", "nev
 good = ["funny", "eat", "good", "pretty", "white", "fly", "know", "live", "thank", "best", "fast", "first", "sing", "sleep", "better", "clean",
          "full", "drink", "kind", "laugh", "light", "own", "start", "together", "warm",
          "apple", "baby", "bed", "bird, birthday", "cake", "children", "Christmas", "father", "flower", "game", "garden", "home", "kitty", "money",
-         "mother", "party", "Santa Claus", "song", "sun", "toy", "beautiful", "like", "love"]
+         "mother", "party", "Santa Claus", "song", "sun", "toy", "beautiful", "like", "love", "well"]
 
 def score(input):
     points = 0
@@ -85,18 +85,53 @@ input = tokenize(input)
 show(input)
 
 #TODO: create these word categories
-""" verbs = []
+nouns = ["apple", "baby", "back", "ball", "bear", "bed", "bell", "bird", "birthday", "boat", "box",
+          "boy", "bread", "brother", "cake", "car", "cat", "chair", "chicken", "children", "Christmas",
+          "coat", "corn", "cow", "day", "death", "dog", "doll", "door", "duck", "egg", "eye", "farm", "farmer",
+          "father", "feet", "fire", "fish", "floor", "flower", "game", "garden", "girl", "goat",
+          "grass", "ground", "hand", "head", "hill", "home", "horse", "house", "kitty", "leg",
+          "letter", "man", "men", "milk", "money", "morning", "mother", "name", "nest", "night",
+          "paper", "party", "picture", "pig", "rabbit", "rain", "ring", "robin", "Santa Claus",
+          "school", "seed", "sheep", "shoe", "sister", "snow", "song", "squirrel", "stick", "street",
+          "sun", "table", "thing", "time", "top", "toy", "tree", "watch", "water", "way", "wind",
+          "window", "woman", "women", "wood"]
 
-nouns = []
+verbs = ["am", "are", "ask", "ate", "be", "been", "bring", "buy", "call", "came",
+         "can", "carry", "come", "could", "cut", "did", "die", "do", "does", "done", "don't",
+         "draw", "drink", "eat", "fall", "find", "fly", "found", "gave", "get", "give",
+         "go", "goes", "going", "got", "grow", "had", "has", "have", "help", "hold",
+         "hurt", "is", "jump", "keep", "know", "laugh", "let", "like", "live", "look",
+         "made", "make", "may", "must", "open", "pick", "play", "please", "pull", "put",
+         "ran", "read", "ride", "run", "said", "saw", "say", "see", "shall", "show",
+         "sing", "sit", "sleep", "start", "stop", "take", "tell", "thank", "think", "try",
+         "use", "walk", "want", "was", "wash", "went", "were", "will", "wich", "work", "would", "write"]
 
-adjectives = []
+adjectives = ["a", "all", "an", "any", "best", "better", "big", "black", "blue", "both",
+              "brown", "clean", "cold", "eight", "every", "five", "four", "full", "funny", "good",
+              "green", "hot", "kind", "light", "little", "long", "many", "new", "old", "one",
+              "own", "pretty", "red", "right", "round", "seven", "six", "small", "some", "ten",
+              "the", "three", "two", "warm", "white", "yellow"]
 
-adverbs = []
+adverbs = ["again", "always", "around", "away", "before", "far", "fast", "first", "here", "how",
+           "just", "much", "never", "no", "not", "now", "off", "once", "only", "out",
+           "so", "soon", "then", "there", "today", "together", "too", "up", "very", "well",
+           "when", "where", "why", "yes"]
 
-conjuctions = []
+question_words = ["how", "much", "what", "when", "where", "which", "who", "why"]
+# "much" will be a special case of using "how"
 
-pronouns = []
+conjuctions = ["and", "as", "because", "but", "if", "or"]
+
+pronouns_subject = ["he","i", "I", "it", "they", "we", "you"]
+
+pronouns_object = ["him", "me", "this", "that"]
+
+pronouns_posessive = ["his", "her", "my", "its", "thier", "our", "your"]
+
+pronouns_reflexive = ["myself", "himself", "herself", "itself", 
+                      "themselves", "ourselves", "yourself", "yourselves"]
 
 interjections = []
 
-prepostions = [] """
+prepostions = ["about", "after", "at", "by", "down", "for", "from", "on", "into", "of", "on",
+               "over", "to", "under", "upon", "with"]
